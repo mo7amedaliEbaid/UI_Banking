@@ -6,7 +6,9 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
@@ -16,9 +18,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.SideEffect
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import com.ahmedapps.bankningappui.ui.theme.BankningAppUITheme
 import com.example.uicompose.ui.components.BottomNavigationBar
 import com.example.uicompose.ui.components.CardsSection
+import com.example.uicompose.ui.components.FinanceSection
 import com.example.uicompose.ui.components.WalletSection
 
 //import com.example.uicompose.ui.theme.UIComposeTheme
@@ -64,7 +68,6 @@ fun GreetingPreview() {
     Greeting("Android")
   }
 }*/
-@Preview
 @Composable
 fun HomeScreen() {
   Scaffold(
@@ -81,6 +84,8 @@ fun HomeScreen() {
         // Your content goes here
         WalletSection()
         CardsSection()
+        Spacer(modifier = Modifier.height(20.dp))
+        FinanceSection()
       }
     }
   )
