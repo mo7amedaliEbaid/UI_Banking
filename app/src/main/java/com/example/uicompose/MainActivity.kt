@@ -18,6 +18,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.ahmedapps.bankningappui.ui.theme.BankningAppUITheme
 import com.example.uicompose.ui.components.BottomNavigationBar
+import com.example.uicompose.ui.components.CardsSection
+import com.example.uicompose.ui.components.WalletSection
 
 //import com.example.uicompose.ui.theme.UIComposeTheme
 //import com.google.accompanist.systemuicontroller.rememberSystemUiController
@@ -77,7 +79,8 @@ fun HomeScreen() {
           .padding(padding)
       ) {
         // Your content goes here
-
+        WalletSection()
+        CardsSection()
       }
     }
   )
