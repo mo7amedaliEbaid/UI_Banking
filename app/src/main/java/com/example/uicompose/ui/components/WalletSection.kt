@@ -30,8 +30,8 @@ fun WalletSection() {
     modifier = Modifier
       .fillMaxWidth()
       .padding(16.dp),
-  //  horizontalArrangement = Arrangement.SpaceBetween,
-    verticalAlignment = Alignment.CenterVertically,
+    horizontalArrangement = Arrangement.SpaceBetween,
+   // verticalAlignment = Alignment.CenterVertically,
   ) {
     Column {
       Text(

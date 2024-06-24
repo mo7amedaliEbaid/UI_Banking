@@ -22,6 +22,7 @@ import androidx.compose.ui.unit.dp
 import com.ahmedapps.bankningappui.ui.theme.BankningAppUITheme
 import com.example.uicompose.ui.components.BottomNavigationBar
 import com.example.uicompose.ui.components.CardsSection
+import com.example.uicompose.ui.components.CurrencySection
 import com.example.uicompose.ui.components.FinanceSection
 import com.example.uicompose.ui.components.WalletSection
 
@@ -86,6 +87,8 @@ fun HomeScreen() {
         CardsSection()
         Spacer(modifier = Modifier.height(20.dp))
         FinanceSection()
+        Spacer(modifier = Modifier.height(20.dp))
+        CurrencySection()
       }
     }
   )
